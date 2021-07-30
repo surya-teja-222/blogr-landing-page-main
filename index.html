@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <link rel="stylesheet" href="/app/scss/style.css">
+
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+</head>
+<body>
+
+  <header class="header">
+    <!-- <div class="img"></div> -->
+    <nav class="flex flex__jc-sb flex__ai-c ">
+      <div style="display: flex;">
+        <img src="images/logo.svg"  alt="blogr" >
+        <div class="hide-for-mobile desktop-head-f">
+          <a href="#" >Product <img src="/images/icon-arrow-light.svg" alt=""></a>
+          <a href="#" >Company <img src="/images/icon-arrow-light.svg" alt=""></a>
+          <a href="#" >Connect <img src="/images/icon-arrow-light.svg" alt=""></a>
+        </div>
+      </div>
+      <a id="btnHamburger" href="#" class="flex__ham hide-for-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+      
+      <div class="hide-for-mobile desktop-head">
+        <a href="#" class="desktop-button">Login</a>
+        <a href="#" class="desktop-button">Sign Up</a>
+      </div>
+    </nav>
+
+    <div id="tooglemenu" class="toogle_menu dis">
+      <a href="#" class="t1" id="t1">Product <img src="/images/icon-arrow-dark.svg" alt=""></a>
+      <div class="toogle_menu_1" id="toogle_menu_1">
+        <a href="#">Overview</a>
+        <a href="#">Pricing</a>
+        <a href="#">Marketplace</a>
+        <a href="#">Features</a>
+        <a href="#">Integrations</a>
+      </div>
+      <a href="#" class="t1" id="t2">Company <img src="/images/icon-arrow-dark.svg" alt=""></a>
+      <div class="toogle_menu_2" id="toogle_menu_2">
+        <a href="#">About</a>
+        <a href="#">Team</a>
+        <a href="#">Blog</a>
+        <a href="#">Careers</a>
+      </div>
+      <a href="#" class="t1" id="t3">Connect <img src="/images/icon-arrow-dark.svg" alt=""></a>
+      <div class="toogle_menu_3" id="toogle_menu_3">
+        <a href="#">Contact</a>
+        <a href="#">Newsletter</a>
+        <a href="#">LinkedIn</a>
+      </div>
+      <div class="no-no"></div>
+      <hr>
+      <div class="toogle_menu_button_1_div">
+        <button class="toogle_menu_button_1"  type="button">
+          Login
+        </button>
+      </div>
+      <div class="toogle_menu_button_2_div">
+        <button class="toogle_menu_button_2"  type="button">
+          Sign Up
+        </button>
+      </div>
+    </div>
+    <h1>
+      A modern publishing platform
+    </h1>
+    <p>
+      Grow your audience and build your online brand
+    </p>
+    <div class="flex-p">
+      <a class="b-1">Start For Free</a>
+      <a class="b-2"> learn More</a>
+    </div>
+  </header>
+
+  <section class="sec_1 sec_1_ai-c">
+    <div class="sec_1_head">
+      <h4>Designed for the future</h4>
+    </div>
+    <div class="flex-body">
+      <div class="sec_1_img flex-con">
+        <img class="hide-for-desktop" src="/images/illustration-editor-mobile.svg" alt="">
+        <img class="hide-for-mobile" src="/images/illustration-editor-desktop.svg" alt="">
+      </div >
+      <div class="flex-con">
+        <div class="sec_1_text">
+        <div class="sec_1_text_1">
+            <h4>Introducing an extensible editor</h4>
+            <p>
+              Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+              The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+              videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+              change the looks of a blog.
+            </p>
+          </div>
+        </div>
+        
+        <div class="sec_1_text sec_1_text_ov-s">
+          <div class="sec_1_text_1">
+            <h4>Robust content management</h4>
+            <p>
+              Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+              by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="sec_2 sec_2_ai-c">
+    <div class="sec_2_hero_img">
+      <img class="hide-for-desktop" src="/images/illustration-phones.svg" alt="">
+      <img class="hide-for-mobile" src="/images/illustration-phones.svg" alt="">
+    </div>
+    <div class="sec_2_content">
+      <h4>State of the Art Infrastructure</h4>
+      <p>
+        With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+        This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+      </p>
+    </div>
+  </section>
+
+    <section class="sec_3">
+      <div class="sec_3_img">
+        <img class="hide-for-mobile" src="/images/illustration-laptop-desktop.svg" alt="">
+        <img class="hide-for-desktop" src="/images/illustration-laptop-mobile.svg" alt="">
+      </div>
+      <div class="sec3_text">
+        <div class="sec_3_text_1 flex-con">
+          
+          <h4>Free, open, simple</h4>
+          <p>
+            Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+            features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+            and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+          </p>
+        </div>
+        <div class="sec_3_text_2 flex-con">
+          <h4>Powerful tooling</h4>
+          <p>
+            Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+            capable of producing even the most complicated sites.
+
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <footer class="footer footer_ai-c">
+      <div class="footer_foot-img">
+        <img src="/images/logo.svg" alt="">
+      </div>
+      <div class="footer_sec-1">
+        <h5>Product</h5>
+        <div><a href="#">Overview</a></div>
+        <div><a href="#">Pricing</a></div>
+        <div><a href="#">Marketplace</a></div>
+        <div><a href="#">Features</a></div>
+        <div><a class="m-t" href="#">Integrations</a></div>
+      </div>
+      <div class="footer_sec-2">
+        <h5>Company</h5>
+        <div><a href="#">About</a></div>
+        <div><a href="#">Team</a></div>
+        <div><a href="#">Blog</a></div>
+        <div><a href="#">Careers</a></div>
+      </div>
+      <div class="footer_sec-3">
+        <h5>Connect</h5>
+        <div><a href="#">Contact</a></div>
+        <div><a href="#">Newsletter</a></div>
+        <div><a href="#">LinkedIn</a></div>
+        <div><a href="#">Careers</a></div>
+      </div>
+    </footer>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.github.com/surya-teja-222">Surya Teja Reddy</a>.
+  </div>
+
+  <script src="/app/js/script.js"></script>
+</body>
+</html>

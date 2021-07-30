@@ -1,0 +1,67 @@
+.footer{
+
+    @include breakpoint-up(medium){
+        display: flex;
+        max-height: 540px;
+        height: 300px;
+    }
+    height: 900px;
+    background-color: $verydarkblackblue;
+    border-top-right-radius: 150px;
+    &_ai-c{
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+    }
+    &_foot-img{
+        padding-top: 80px;
+        height: 30px;
+        padding-bottom: 90px;
+
+        @include breakpoint-up(medium){
+            margin-left: 170px;
+            padding: 0px;
+            
+        }
+    }
+    &_sec-1 , &_sec-2 , &_sec-3{
+        >h5{
+            color:$white;
+            font-family: $overpass;
+            font-weight: 500;
+            font-size: 30px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+
+            @include breakpoint-up(medium){
+                font-size: 20px;
+                
+            }
+        }
+        >div{
+            >a{
+                line-height: 1.5;
+                text-decoration: none;
+                color:$white;
+                font-family: $ubuntu;
+                font-size: 20px;
+                @include breakpoint-up(medium){
+                    font-size: 10px;
+                    
+                }
+            }
+            
+        }
+    }
+
+    &_sec-3{
+        @include breakpoint-up(medium){
+            margin-right: 170px;
+        }
+    }
+}
+
+
+.m-t{
+    padding-bottom: 30px;
+}

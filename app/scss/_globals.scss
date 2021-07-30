@@ -1,0 +1,113 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    
+  }
+
+
+  .no-scroll{
+    overflow: hidden;
+  }
+
+
+html{
+  @include breakpoint-up(medium){
+    overflow-x: hidden;
+  }
+}
+h1, h2, h3 {
+    font-weight: 600;
+    font-size: 45px;
+    color: $white;
+    margin-top: 0px;
+    text-align: center;
+    @include breakpoint-up(medium){
+      font-size: 40px;
+      padding-top: 75px;
+    }
+}
+p{
+  color: $white;
+  margin-top: 0px;
+  text-align: center;
+  font-size: 23px;
+  @include breakpoint-up(medium){
+    font-size: 15px;
+  }
+}
+
+.b-1{
+  align-items: center;
+  justify-content: center;
+  border:0;
+  background-color: $white;
+  color: hsl(353 , 100% , 62%);
+  font-weight: 800;
+  padding: 18px;
+  border-radius: 45px;
+  margin-right: 16px;
+
+  @include breakpoint-up(medium){
+    background-color: transparent;
+    color:$white;
+  }
+}
+
+.b-1:hover{
+  @include breakpoint-up(medium){
+    background-color: hsla(356, 81%, 79%, 0.541);
+  }
+}
+
+.b-2{
+  align-items: center;
+  justify-content: center;
+  border:0;
+  background: none;
+  color: $white;
+  font-weight: 800;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 45px;
+  border: 2px solid $white;
+  margin-right: 16px;
+
+  @include breakpoint-up(medium){
+    //background-color: transparent;
+    background: $white;
+    color: hsl(353 , 100% , 62%);
+    
+  }
+}
+
+
+.hide-for-desktop{
+  @include breakpoint-up(medium){
+    display: none;
+  }
+}
+
+.hide-for-mobile{
+  @include breakpoint-down(small){
+    display: none;
+  }
+}
+
+
+
+.desktop-button{
+  padding: 10px  20px;
+  background-color: transparent;
+  border-radius: 60px;
+}
+.desktop-button:hover{
+  background-color: hsla(356, 81%, 79%, 0.541);
+}
+
+
+h4{
+  font-family: $overpass;
+  font-size: 24px;
+}

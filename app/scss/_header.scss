@@ -1,0 +1,212 @@
+
+header{
+    width: 100%;
+    height: 600px;
+    //background-image: linear-gradient(135deg , $verylightred , $lightred);
+    background-image: url('/images/bg-pattern-intro.svg'),linear-gradient(135deg , hsl(13 , 100% , 72%) , hsl(353 , 100% , 62%));
+    background-size:350% ;
+    background-position: 35% 34%;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 100px;
+    font-family: 'Overpass', sans-serif;
+
+    @include breakpoint-up(medium){
+        height: 400px;
+        background-size: 154%;
+        background-position: 22% 51%;
+    }
+    .flex{
+        padding-top: 56px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 2.25rem;
+        display: flex;
+        position: relative;
+        &__jc-sb{
+            justify-content: space-between;
+        }
+        &__ai-c{
+            align-items: center;
+        }
+        @include breakpoint-up(medium){
+            padding-top: 33px;
+            padding-left: 84px;
+            >div>img{
+                height: 22px;
+                width: 52px;
+                margin-right: 32px;
+            }
+        }
+
+        &__ham{
+            > span {
+                display: block;
+                width: 30px;
+                height: 2px;
+                background-color: $white;
+                transition: all 300ms ease-in-out;
+                transform-origin: 3px 1px;
+          
+                &:not(:last-child){
+                  margin-bottom: 6px;
+                }
+              }
+              
+        }
+    }
+
+    .toogle{
+        > span:first-child {
+            transform: rotate(45deg);
+        }
+            
+        > span:nth-child(2) {
+            opacity: 0;
+        }
+            
+        > span:last-child {
+            transform: rotate(-45deg);
+        }
+        &_menu{
+            
+            opacity: 0;
+            position: absolute;
+            background-color: $white;
+            padding-top: 2.25rem;
+            transform: translateX(-50%);
+            left: 50%;
+            width: 20.375rem;
+            border-radius: 5px;
+            display: block;
+            text-align: center;
+            a{
+                text-decoration: none;
+                color: $verydarkblackblue;
+                text-align: center;
+                display: block;
+                padding-bottom: 1.625rem;
+                padding-top: 0.625rem;
+                font-weight: 900;
+                
+            }
+            a:hover{
+                text-decoration: underline;
+                
+            }
+            &_1{
+                display: none;
+            }
+            &_2{
+                display: none;
+            }&_3{
+                display: none;
+            }
+            
+
+            &_button_1{
+                border: 0;
+                background: $white;
+                font-family: 'Overpass', sans-serif;
+                font-size: 20px;
+                padding-top: 2.25rem;text-align: center;
+                
+                
+            }
+            &_button_2{
+                border: 0;
+                color: $white;
+                background: linear-gradient(90deg,hsl(13 , 100% , 72%) , hsl(353 , 100% , 62%));
+                font-family: $ubuntu;
+                font-weight: 500;
+                font-size: 20px;
+                border-radius: 35px;
+                padding-top: 1.125rem;
+                padding-bottom: 1.125rem;
+                padding-left: 50px;
+                padding-right: 50px;
+                width: 6.062rem;
+                &_div{
+                    padding-top: 2.25rem;
+                    padding-bottom: 2.25rem;
+                }
+            }
+            
+        }
+    }
+
+    
+}
+
+#toogle_menu_1{
+    background-color: $greyishblue;
+    padding-top: 2.125rem;
+    width: 17.1875rem;
+    align-items: center;
+    transform: translateX(30px);
+}
+#toogle_menu_2{
+    background-color: $greyishblue;
+    padding-top: 2.125rem;
+    width: 17.1875rem;
+    align-items: center;
+    transform: translateX(30px);
+}#toogle_menu_3{
+    background-color: $greyishblue;
+    padding-top: 2.125rem;
+    width: 17.1875rem;
+    align-items: center;
+    transform: translateX(30px);
+    
+}
+.no-no{
+    padding: 10px;
+}
+hr{
+    color: $greyishblue;
+    width: 17.1575rem;
+    transform: translateX(30px);
+}
+
+.flex-p{
+    align-items: center;
+    margin-top: 4.5rem;width: 100%;
+    text-align: center;
+}
+
+.img{
+
+    >img{
+    transform: rotate(180deg);
+    }
+}
+
+.dis{
+    display: none!important;
+}
+
+.desktop-head{
+    >a{
+        text-decoration: none;
+        color: $white;
+        
+    }
+    >a:last-child{
+        margin-right: 80px;
+    }
+    >a:not(:last-child){
+        margin-right: 1rem;
+    }
+    
+}
+
+.desktop-head-f{
+    
+    >a{
+        text-decoration: none;
+        color: $white;
+        font-size: 12px;
+    }
+    >a:not(:last-child){
+        margin-right: 1rem;
+    }
+}
